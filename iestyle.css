@@ -1,0 +1,37 @@
+.orange, .orange span, .jaune, .jaune span, .rose, .rose span, .vert, .vert span, .rouge, .rouge span{	background-image: none;}
+
+a.bouton, a.bouton span {
+	float: left;
+	display: inline;
+	height: 22px;
+	background-repeat: no-repeat;
+	
+	color: #000;
+	font: 12px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+	text-decoration: none;
+}
+a.bouton {
+	background-position: default;
+}
+a.bouton span {
+	background-position: default;
+}
+a.bouton span span {
+	background-position: default;
+	background-repeat: none;
+	margin: 0;
+}
+a.bouton span span span {
+	background: transparent;
+	margin: 0;
+	padding-top: default;
+}
+
+a.bouton:hover, a.bouton:hover span {
+	text-decoration: underline;
+}
+
+a.gros_bouton{
+	font-weight: bold;
+}
+

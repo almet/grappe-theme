@@ -1,0 +1,256 @@
+/*
+Theme Name: Reseau GRAPPE (Septembre 2009)
+Description: Theme for website reseaugrappe.org
+Version: 1.0
+Author: Alexis Métaireau
+*/
+
+body{
+	margin:0;
+	padding:0;
+	font-size:80%;
+	font-family:verdana;
+	background:#96251f url(img/body.png);
+}
+
+.condenser{
+	margin:0 auto;
+}
+
+#left {
+    float: left;
+    width:850px;
+}
+
+#header #title h1{
+	color: #93a553;
+	border-bottom: 1px #93a553 solid;
+	background-color: #96251f;
+	font-size: 23px;
+	text-align: center;
+}
+
+#header #title .important-text{
+	color: #fcdb00;
+}
+
+p#title-description{
+	text-align: center;
+	font-size: 24px;
+	padding-top: 10px;	
+}
+
+p#title-description span{
+	display: block;
+}
+.small-size{
+	font-size: 1em;
+}
+
+.medium-size{
+	font-size: 1.4em;
+}
+
+.big-size{
+	font-size: 1.7em;
+}
+
+div#menu{
+    margin-right:-2px;
+    height: 50px;
+    padding-top: 20px;
+    background:#93a553 url(img/border-topright.png) top right no-repeat;
+    text-align: center;
+}
+
+#menu ul{
+	width: 600px;
+	margin: auto;
+}
+#menu li{
+  	display:inline;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;  
+	margin-left: 20px;
+}
+#menu li a{ margin-right: 5px;}
+
+#content{
+    background:#93a553;
+    padding-top:0;
+    margin: 0 324px 0 2px;
+    padding-left: 20px;
+}
+
+#content h2{
+    color: #95241e;
+}
+
+#content p.post-date {
+	float:left;
+	margin:0 0 10px 10px;
+	position:relative;
+	width:85px;
+}
+
+#content div.post-content{
+	margin-left: 115px;
+}
+
+#content span.post-date {
+	margin:0;
+}
+
+#content span.post-date span.date-d {
+	color:#96251F;
+	float:left;
+	font-size:35px;
+	font-weight:bold;
+	margin-right:2px;
+}
+
+#content span.post-date span.date-m {
+	color:#96251F;
+	float:left;
+	font-size:20px;
+	margin-top:-7px;
+}
+
+#content span.post-date span.date-y {
+	background:#93A553 none repeat scroll 0 0;
+	clear:left;
+	font-size:12px;
+	left:0;
+	position:absolute;
+	top:24px;
+	width:85px;
+}
+
+#content span.post-date span.date-h {
+	font-size:12px;
+	left:40px;
+	position:absolute;
+	top:24px;
+}
+
+#content span.post-date span.date-h a{
+	text-decoration: none;
+}
+
+#sidebar{
+    top: 200px;
+    float: right;
+ 	background:#96251f;   
+ 	float: right;
+    width: 314px;
+    padding-left: 10px;
+}
+
+#sidebar h2{
+	color: #fcd901;
+	height: 50px;
+	padding-left: 20px;
+	background: url(img/h2.png) no-repeat bottom left;
+	font-size: 13pt;
+	font-family: Arial, "Century Gothic", sans-serif;	
+}
+
+#sidebar h2 a{
+	color: #fcd901;
+}
+
+#sidebar #logo{
+    margin-right: 35px;
+    right: 20px;
+    height: 227px;
+    background:#96251f url(img/logo.png) no-repeat top right;
+    text-indent: -9999em;
+}
+
+#sidebar .text{
+	color: #fcd901;
+	width: 300px;
+	text-align:justify;
+}
+
+.clear{
+	clear: both;
+}
+
+.hr {
+  height: 40px;
+  width: 543px;
+  background: #93a553 url(img/separator.png) no-repeat;
+  margin-left: -29px;
+}
+
+.hr hr {
+  display: none;
+}
+
+a.button, a.button span {
+	float: left;
+	display: block;
+	height: 29px;
+	background-repeat: no-repeat;
+	
+	color: #fcd901;
+	font: 12px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
+    font-variant: small-caps;
+	
+	text-decoration: none;
+}
+a.button {
+	background-position: left 0;
+	background-image: url(img/button.png);
+}
+a.button span {
+	background-position: right -58px;
+	background-image: url(img/button.png);
+}
+a.button span span {
+	background-position: left -29px;
+	background-repeat: repeat-x;
+	margin: 0 14px 0 14px;
+}
+a.button span span span {
+	background: transparent;
+	margin: 0 -3px 0 -3px;
+	padding-top: 5px;
+}
+
+img{
+    border: 3px #96251f solid;   
+}
+
+.fright{
+    float: right;
+}
+.fleft{
+    float: left;
+    margin-right: 10px;
+}
+.acenter{
+text-align:center;
+}
+
+a{
+    color: #eaeaea;   
+}
+
+img.alignright {
+	margin: 0 7px 2px 0;
+}
+
+img.alignleft {
+	margin: 0 0 2px 7px;
+}
+
+.alignright {
+	float: left;
+}
+
+.alignleft {
+	float: right;
+}
