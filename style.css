@@ -138,6 +138,17 @@ div#menu{
 	text-decoration: none;
 }
 
+#content #page h2{
+	height: 55px;
+	padding-left: 25px;
+	background: url(img/separator.png) #93A553 no-repeat bottom left;
+	margin-left: -20px;
+}
+
+#content #page{
+
+}
+
 #sidebar{
     top: 200px;
     float: right;
@@ -178,11 +189,21 @@ div#menu{
 	clear: both;
 }
 
+#footer {
+  height: 40px;
+  background: #93a553 url(img/separator.png) no-repeat;
+  margin-left: -20px;
+}
+
+#footer #footer-grappe{
+	float: right;
+}
+
 .hr {
   height: 40px;
   width: 543px;
   background: #93a553 url(img/separator.png) no-repeat;
-  margin-left: -29px;
+  margin-left: -20px;
 }
 
 .hr hr {
