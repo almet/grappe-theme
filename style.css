@@ -343,9 +343,9 @@ img{
 text-align:center;
 }
 
-a{
-    color: #eaeaea;   
-}
+#content a, .page a { color: #990000; font-weight: bold; }
+#sidebar a { color: rgb(252, 217, 1); }
+#sidebar li a { text-decoration: none; }
 
 img.alignright {
 	margin: 0 7px 2px 0;
@@ -388,5 +388,4 @@ img.alignleft {
 .mright {
     margin-right: 10px;
 }
-
 

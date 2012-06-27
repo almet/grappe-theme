@@ -1,12 +1,10 @@
 <div id="sidebar">    
     <div id="logo">Grappe logo</div>
 <h2>Nos projets</h2>
-    <div class='text'>
 	<ul>
 
 	<?php get_links(19, '<li>', '</li>', '', TRUE, 'url', FALSE); ?>
         </ul>
-	</div>
 <?php    if (defined('SIDEBAR')){ ?>
 
 <?php
@@ -22,11 +20,9 @@ setup_postdata($sidebar_page);
 
 <?php } else { ?>
     <h2>Les assos du réseau</h2>
-	<div class='text'>
 	<ul>
 	<?php get_links(18, '<li>', '</li>', '', TRUE, 'url', FALSE); ?>
 	</ul>
-	</div>
 
 <?php
 $page_id = 1578;
