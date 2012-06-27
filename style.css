@@ -10,7 +10,7 @@ body{
 	padding:0;
 	font-size:80%;
 	font-family:verdana;
-	background:#A10028 url(img/body.png);
+	background:#95261c url(img/body.png);
 }
 
 .condenser{
@@ -24,7 +24,7 @@ body{
 
 #header{
 	margin:0 324px 0 0px;
-	background: url(img/header-center.png) #A10028 repeat-x bottom left;
+	background: url(img/header-center.png) #95261c repeat-x bottom left;
 }
 
 #header #title{
@@ -36,7 +36,7 @@ body{
 }
 
 #header #title h1{
-	color: #88AB5D;
+	color: #93a553;
 	font-size: 23px;
 	text-align: center;
 }
@@ -76,7 +76,7 @@ div#menu{
     margin-right:-2px;
     height: 50px;
     padding-top: 20px;
-    background:#88AB5D url(img/border-topright.png) top right no-repeat;
+    background:#93a553 url(img/border-topright.png) top right no-repeat;
     text-align: center;
 }
 
@@ -94,7 +94,7 @@ div#menu{
 #menu li a{ margin-right: 5px;}
 
 #content{
-    background:#88AB5D;
+    background:#93a553;
     padding-top:0;
     margin: 0 324px 0 2px;
     padding-left: 20px;
@@ -126,7 +126,7 @@ div#menu{
 }
 
 #content span.post-date span.date-d {
-	color:#A10028;
+	color:#95261c;
 	float:left;
 	font-size:35px;
 	font-weight:bold;
@@ -134,14 +134,14 @@ div#menu{
 }
 
 #content span.post-date span.date-m {
-	color:#A10028;
+	color:#95261c;
 	float:left;
 	font-size:20px;
 	margin-top:-7px;
 }
 
 #content span.post-date span.date-y {
-	background:#88AB5D none repeat scroll 0 0;
+	background:#93a553 none repeat scroll 0 0;
 	clear:left;
 	font-size:12px;
 	left:0;
@@ -169,7 +169,7 @@ div#menu{
 #sidebar{
     top: 200px;
     float: right;
- 	background:#A10028;   
+ 	background:#95261c;   
  	float: right;
     width: 314px;
     padding-left: 10px;
@@ -192,7 +192,7 @@ div#menu{
     margin-right: 35px;
     right: 20px;
     height: 227px;
-    background:#A10028 url(img/logo.png) no-repeat top right;
+    background:#95261c url(img/logo.png) no-repeat top right;
     text-indent: -9999em;
 }
 
@@ -208,7 +208,7 @@ div#menu{
 
 #footer {
   height: 40px;
-  background: #88AB5D url(img/separator.png) no-repeat;
+  background: #93a553 url(img/separator.png) no-repeat;
   margin-left: -20px;
 }
 
@@ -219,7 +219,7 @@ div#menu{
 #content #page h2, h2.separator{
 	height: 55px;
 	padding-left: 25px;
-	background: url(img/separator.png) #88AB5D no-repeat bottom left;
+	background: url(img/separator.png) #93a553 no-repeat bottom left;
 	margin-left: -20px;
 }
 
@@ -277,7 +277,7 @@ color:black;
 .hr {
   height: 40px;
   width: 543px;
-  background: #88AB5D url(img/separator.png) no-repeat;
+  background: #93a553 url(img/separator.png) no-repeat;
   margin-left: -20px;
 }
 
@@ -316,7 +316,7 @@ a.button span span span {
 }
 
 img{
-    border: 3px #A10028 solid;   
+    border: 3px #95261c solid;   
 }
 
 .fright{
