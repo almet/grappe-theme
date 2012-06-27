@@ -1,14 +1,15 @@
 /*
-Theme Name: Reseau GRAPPE (Septembre 2009)
+Theme Name: Reseau GRAPPE (August 2012)
 Description: Theme for website reseaugrappe.org
-Version: 1.0
+Version: 1.2
 Author: Alexis Métaireau
 */
+@import url(http://fonts.googleapis.com/css?family=Cabin+Sketch:400,700);
 
 body{
 	margin:0;
 	padding:0;
-	font-size:80%;
+	font-size:1em;
 	font-family:verdana;
 	background:#95261c url(img/body.png);
 }
@@ -110,8 +111,12 @@ div#menu{
     margin-left: 40px;
 }
 
-#content h2{
+#content h2, #content h2 a{
     color: #95241e;
+    font-family: 'Cabin Sketch';
+    font-style: normal;
+    font-size: 1.4em;
+    text-decoration: none;
 }
 
 #content p.post-date {
@@ -164,6 +169,14 @@ div#menu{
 #content #page, .post{
 	padding:0 20px 0 0;
 	clear: left;
+}
+
+#content #page h1, .post h1{
+    font-size: 1em;
+}
+
+#content #page p, .post p{
+    text-align: justify;
 }
 
 #sidebar{
@@ -339,7 +352,7 @@ img.alignright {
 }
 
 img.alignleft {
-	margin: 0 0 2px 7px;
+	margin: 0 0 2px 20px;
 }
 
 .alignright {
