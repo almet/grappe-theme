@@ -7,10 +7,10 @@
 		    <div class="post-content">
 		    
 			<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Lien permanent vers <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-            <div class="hr"><hr /></div>
 		    <?php the_content('Lire la suite &raquo;'); ?>
 		    </div>
 		</div>
+		<div class="hr"><hr /></div>
 		<?php endwhile; ?>
 		<a id="archives" href="/archives"> voir les archives</a>
 		
