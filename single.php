@@ -1,18 +1,21 @@
 <?php get_header(); ?>
-	<div id="content" class="widecolumn">
+	 <div class='post'>
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		<div class="post" id="post-<?php the_ID(); ?>">
-		<p class='aright' style='margin-left: 10px; font-size: 13px; color: rgb(170, 170, 170);'>le <?php the_time('j F Y') ?></small>
-			<h1><?php the_title(); ?></h1>
-			<h2>par <a href="<?php echo get_option('home'); ?>/"><?php the_author() ?></a></h2>
-			
-			<div class='message info'><?php the_excerpt(); ?></div>
-			
-			<div class="entry">
-				<?php the_content('<p class="serif">Lire la suite de l\'article &raquo;</p>'); ?>
-				<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
-				<?php the_tags( '<p>Tags: ', ', ', '</p>'); ?> 
-			</div>
+  
+ 
+			<p class="post-date"><span class="post-date">
+		      <span class="date-d"><?php the_time('j'); ?></span>
+		      <span class="date-m"><?php the_time('M'); ?>.</span>
+		      <span class="date-y"><?php the_time('Y'); ?></span>
+		      <span class="date-h"><a title="Lien permanent" href="<?php the_permalink() ?>"><?php the_time('G:i'); ?></a></span>
+		    </span>
+		    </p>
+		    <div class="post-content">
+		    
+				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Lien permanent vers <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+		    <?php the_content('Lire la suite &raquo;'); ?>
+		    </div>
+		
 
 	<?php  comments_template(); ?>
 	<?php endwhile; else: ?>

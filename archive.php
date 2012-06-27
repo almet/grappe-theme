@@ -1,7 +1,4 @@
 <?php get_header(); ?>
-<?php get_sidebar(); ?>
-	<div id="content" class="narrowcolumn">
-
 		<?php if (have_posts()) : ?>
 		<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
 		<?php /* If this is a category archive */ if (is_category()) { ?>
@@ -26,14 +23,19 @@
 		</div>
 
 		<?php while (have_posts()) : the_post(); ?>
-		<div class="post">
-			<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Lien permanent vers <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-			<small><?php the_time('l j F Y') ?></small>
-			<div class="entry">
-				<?php the_content('Lire le reste de cet article &raquo;'); ?>
-			</div>
-			<p class="postmetadata"><?php the_tags('Tags: ', ', ', '<br />'); ?> Publié dans <?php the_category(', ') ?> | <?php edit_post_link('Modifier', '', ' | '); ?>  <?php comments_popup_link('Aucun commentaire »', '1 commentaire »', '% commentaires »', 'comments-link', 'Les commentaires sont fermés'); ?></p>
+		<div class='post'>
+			<p class="post-date"><span class="post-date">
+		      <span class="date-d"><?php the_time('j'); ?></span>
+		      <span class="date-m"><?php the_time('M'); ?>.</span>
+		    </span>
+		    </p>
+		    <div class="post-content">
+		    
+			<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Lien permanent vers <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+		    <?php the_content('Lire la suite &raquo;'); ?>
+		    </div>
 		</div>
+		<div class="hr"><hr /></div>
 		<?php endwhile; ?>
 		<div class="navigation">
 			<div class="alignleft"><?php next_posts_link('&laquo; Articles plus anciens') ?></div>
@@ -43,5 +45,4 @@
 		<h2 class="center">Introuvable</h2>
 		<?php include (TEMPLATEPATH . '/searchform.php'); ?>
 	<?php endif; ?>
-	</div>
 <?php get_footer(); ?>

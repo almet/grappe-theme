@@ -7,8 +7,6 @@
 			<p class="post-date"><span class="post-date">
 		      <span class="date-d"><?php the_time('j'); ?></span>
 		      <span class="date-m"><?php the_time('M'); ?>.</span>
-		      <span class="date-y"><?php the_time('Y'); ?></span>
-		      <span class="date-h"><a title="Lien permanent" href="<?php the_permalink() ?>"><?php the_time('G:i'); ?></a></span>
 		    </span>
 		    </p>
 		    <div class="post-content">
@@ -19,6 +17,7 @@
 		</div>
 		<div class="hr"><hr /></div>
 		<?php endwhile; ?>
+		<a id="archives" href="/archives"> voir les archives</a>
 		
 	<?php else : ?>
 	

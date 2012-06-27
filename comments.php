@@ -19,7 +19,7 @@
 
 <?php if ($comments) : ?>
 <div id="comments">
-	<h2 id="comments"><?php comments_number('Aucun commentaire', 'Un commentaire', '% commentaires' );?></h2> 
+	<h2 class="separator"><?php comments_number('Aucun commentaire', 'Un commentaire', '% commentaires' );?></h2> 
 
 	<?php $i =0; 
 	foreach ($comments as $comment) : ?>
@@ -28,21 +28,20 @@
 		$odd = ($i%2 == 0)? 'odd' : 'even';
 	?>
 	<blockquote id="comment-<?php comment_ID() ?>" class='<?php echo $odd ?> comment'>
-		<p class="comment-number">
-		<a href="#comment-<?php comment_ID() ?>"><?php echo $i ?></a>
-		</p>
+		<p class="post-date"><span class="post-date">
+		      <span class="date-d"><?php the_time('j'); ?></span>
+		      <span class="date-m"><?php the_time('M'); ?>.</span>
+		</span></p>
+		
 		<p><?php if ($comment->comment_approved == '0') : ?>
 			<em>Votre commentaire est en attente de modération.</em>
 			<?php endif; ?>
-		<?php comment_text() ?></p>
+			<?php comment_text() ?>
+		</p>
+		<p class='fright'><?php comment_author_link() ?></p>
 		
-		<div class="comment-author aright">
-		le <?php comment_date('j F Y') ?> à 
-		<?php comment_time('H:i') ?>, par
-		<?php comment_author_link() ?>
-		<?php edit_comment_link('Editer','-- ',''); ?>                   
-		</div>
 	</blockquote>
+	<div style='clear:left'> </div>
 	<?php endforeach; /* end for each comment */ ?>
 
  <?php else : // this is displayed if there are no comments so far ?>
@@ -55,7 +54,7 @@
 <?php endif; ?>
 
 <?php if ('open' == $post->comment_status) : ?>
-<h2 id="respond">Laisser un commentaire </h2>
+<h2 class="separator">Laissez un commentaire !</h2>
 <?php if ( get_option('comment_registration') && !$user_ID ) : ?>
 <p>Vous devez être  <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=<?php echo urlencode(get_permalink()); ?>">connecté</a> pour publier un commentaire.</p>
 <?php else : ?>
@@ -83,4 +82,3 @@
 
 <?php endif; // If registration required and not logged in ?>
 <?php endif; // if you delete this the sky will fall on your head ?>
-</div>
