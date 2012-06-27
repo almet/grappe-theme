@@ -59,7 +59,6 @@ if (function_exists('stray_random_quote')){
  
 		<li><a class='button' href='<?php echo get_option('home'); ?>/galerie'><span><span><span>Galerie</span></span></span></a></li>
 		<li><a class='button' href='<?php echo get_option('home'); ?>/politique-partenariale'><span><span><span>Partenaires</span></span></span></a></li>
-         <li><a class='button' href='<?php echo get_option('home'); ?>/liens'><span><span><span>Liens</span></span></span></a></li>
        
 		<li><a class='button' href='http://forums.reseaugrappe.org'><span><span><span>Forums</span></span></span></a></li>
 		<li><a class='button' href='<?php echo get_option('home'); ?>/contact'><span><span><span>Contacts</span></span></span></a></li>
