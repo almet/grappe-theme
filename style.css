@@ -189,12 +189,18 @@ div#menu{
 }
 
 #sidebar h2{
-	color: #fcd901;
-	height: 50px;
-	padding-left: 20px;
 	background: url(img/h2.png) no-repeat bottom left;
-	font-size: 13pt;
-	font-family: Arial, "Century Gothic", sans-serif;	
+	height: 50px;
+	font-size: 1.5em;
+    text-align: right;
+
+	color: rgb(147, 165, 83);
+
+    font-family: 'Cabin Sketch';
+    font-weight: normal;
+
+    padding-right: 10px;
+	padding-left: 20px;
 }
 
 #sidebar h2 a{
@@ -345,6 +351,7 @@ text-align:center;
 
 #content a, .page a { color: #990000; font-weight: bold; }
 #sidebar a { color: rgb(252, 217, 1); }
+#sidebar ul { color:#fcd901; }
 #sidebar li a { text-decoration: none; }
 
 img.alignright {
