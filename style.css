@@ -90,7 +90,6 @@ div#menu{
 	list-style-image:none;
 	list-style-position:outside;
 	list-style-type:none;  
-	margin-left: 20px;
 }
 #menu li a{ margin-right: 5px;}
 
@@ -331,7 +330,6 @@ a.button span span {
 a.button span span span {
 	background: transparent;
 	margin: 0 -3px 0 -3px;
-	padding-top: 5px;
 }
 
 img{
